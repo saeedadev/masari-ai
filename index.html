@@ -5,31 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مساري | منصة تعلّم شخصية</title>
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       background-color: #f7f5f0;
       font-family: 'Tahoma', sans-serif;
       color: #333333;
-      text-align: center;
     }
-    h1 {
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero h1 {
       font-size: 3rem;
       margin-bottom: 10px;
     }
-    p {
+    .hero p {
       font-size: 1.2rem;
       color: #666666;
+    }
+    .about {
+      background-color: #efece4;
+      border-radius: 12px;
+    }
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: #444444;
+    }
+    .paths h2, .contact h2 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+    .path-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .path-card {
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 12px;
+      padding: 25px 20px;
+      width: 220px;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #cccccc;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #333333;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <div>
+
+  <section class="hero">
     <h1>مساري</h1>
-    <p>الموقع قيد الإنشاء... سيكون هنا قريباً 🚀</p>
-  </div>
+    <p>تعلم بطريقة تناسبك، وابنِ مسارك نحو أهدافك</p>
+  </section>
+
+  <section class="about">
+    <h2>عن المنهج</h2>
+    <p>
+      في مساري لا تبدأ من دورة عشوائية، بل تبدأ من هدفك ثم نساعدك على بناء الطريق المناسب للوصول إليه.
+      تعتمد المنصة على مسارات تعليمية متفرعة، تتغير حسب احتياجاتك ومستواك، لتتعلم بطريقة منظمة ومرنة.
+    </p>
+  </section>
+
+  <section class="paths">
+    <h2>المسارات المتاحة</h2>
+    <div class="path-cards">
+      <div class="path-card">مسار الذكاء الاصطناعي</div>
+      <div class="path-card">مسار التصميم والإبداع</div>
+      <div class="path-card">مسار البرمجة وبناء المشاريع</div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>تواصل معنا</h2>
+    <form>
+      <input type="text" placeholder="الاسم" required>
+      <input type="email" placeholder="البريد الإلكتروني" required>
+      <textarea placeholder="رسالتك" rows="4" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
 </body>
 </html>
